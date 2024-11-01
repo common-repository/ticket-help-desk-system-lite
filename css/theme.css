@@ -1,0 +1,226 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,100);
+.hdwrap , .hdwrap p, .hdwrap a {	
+	font-family: 'Raleway', sans-serif !important;
+	}
+.hdwrap {
+	min-height:500px;
+	margin: 10px auto;
+    max-width: 1100px;
+}
+
+.hdwrap th, .hdwrap td {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+}
+.hdwrap li {
+  display: inline-block !important;
+}
+ul#myTab {
+    border: solid 1px #ddd;
+    border-radius: 4px 4px 0 0;
+    margin: 10px 0 10px 0;
+}
+
+
+
+a.red, a.red:visited, a.red:hover {
+    color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+div.msidemenu {
+	min-width:200px;
+	padding-left: 10px;
+}
+
+div.msidemenu a{
+	display:block;
+}
+
+
+div.msidemenu p{
+	margin: 0 0 0 0;
+    border: 1px solid lightgray;
+    line-height: 2;
+    padding-left: 10px;
+	padding-right:10px;
+	
+}
+
+div.msidemenu p span.ticketcounter_right {
+	float:right;	
+}
+
+div.viewticket_td span.viewticket_as{
+	font-size: 35px;
+    padding: 10px;
+}
+
+div.viewticket_td span.searchblock_right{
+	float: right;
+    display: inline-flex;
+    margin-top: 15px;
+}
+
+
+.tick_del_CBs_col{
+    padding: 0px 2px 0px 5px;
+}
+
+.tick_gen_cols{
+    padding-left: 5px;
+}
+
+.tick_textarea{
+	width:100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+div.avatar {
+	width:150px;
+	float:left;
+	margin-right:10px;
+}
+/* .squaredFour */
+.squaredFour {
+  width: 20px;
+  position: relative;
+  margin: 20px auto;
+  label {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fcfff4;
+    background: linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+    border-radius: 4px;
+    box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+    &:after {
+      content: '';
+      width: 9px;
+      height: 5px;
+      position: absolute;
+      top: 4px;
+      left: 4px;
+      border: 3px solid #333;
+      border-top: none;
+      border-right: none;
+      background: transparent;
+      opacity: 0;
+      transform: rotate(-45deg);
+    }
+    &:hover::after {
+      opacity: 0.5;
+    }
+  }
+  input[type=checkbox] {
+    visibility: hidden;
+    &:checked + label:after {
+      opacity: 1;
+    }
+  }    
+}
+/* end .squaredFour */
+
+/* Dashboard */
+.dash td{
+	font-size:40px;
+    font-weight: 100;
+    text-align: center;
+}
+.dash th{
+    text-align: center;
+}
+.dash table, th, td {
+    border: 6px solid rgba(0, 0, 0, 0.1);
+}
+/* Admin Tickets */
+table.ticketswrap, table.ticketswrap tr, table.ticketswrap td {
+	border:	solid 1px #ddd;
+	vertical-align:top;
+}
+
+
+
+/*FAQS*/
+section {
+  padding: 20px 0;
+}
+
+.animate {
+  transition: all .3s;
+}
+
+input[name=question] {
+  display: none;
+}
+
+input[name=question] + label {
+  position: relative;
+  display: block;
+  padding: 20px 20px;
+  font-size: 1.2em;
+  cursor: pointer;
+  background: rgba(246, 246, 246, 1);
+  color: #5a9aa8;
+  z-index: 2;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  border-radius: 3px;
+}
+
+.response {
+  position: relative;
+  background: #666666;
+  color: #7A2723;
+  padding: 10px 20px;
+  -webkit-transform: translate3d(0, -40px, 0) rotate(-.5deg);
+  z-index: 1;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  opacity: 0;
+  border-radius: 3px;
+}
+
+input[name=question]:checked + label {
+  background: #F6F6F6;
+  color: #5a9aa8;
+}
+
+input[name=question]:checked + label + .response {
+  opacity: 1;
+  visibility: visible;
+  padding: 10px 20px;
+  -webkit-transform: translate3d(0, 0, 0) rotate(0deg);
+  -webkit-filter: blur(0px);
+  margin-bottom: 20px;
+  color: white;
+}
+
+.fixed-height {
+  height: 50px;
+  overflow: hidden;
+  opacity: 1 !important;
+}

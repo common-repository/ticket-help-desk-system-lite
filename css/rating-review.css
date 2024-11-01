@@ -1,0 +1,29 @@
+.rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  text-align: center;
+}
+.rating > span {
+  display: inline-block;
+  position: relative;
+  width: 1.1em;
+}
+span.fillstar{
+color: transparent;
+}
+
+.rating span:before{
+content:none;
+}
+span.fillstar:before{
+   content: "\2605";
+   position: absolute;
+   left: 0; 
+   color: gold;
+}
+.comments-content{
+width:130px;
+float:right;
+}
+
+
